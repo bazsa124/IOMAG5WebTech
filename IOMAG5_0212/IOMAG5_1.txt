@@ -1,0 +1,24 @@
+1. Repository letöltése, mint local
+	git clone <link>
+
+2. Nem feltöltött számok listázása
+	git status
+
+3. Fájl feltöltése a staging area-ba.
+	git add <fájl>
+	git add	*       --Több fájl esetén
+
+4. A fájl tényleges feltöltése a remote repository-ba.
+	git commit -m "Commit üzenet"
+
+5. A jelenlegi branch commit history-a
+	git log
+	git log -follow <fájl>   --Adott fájlon történt módosítások
+
+6. A remote repositoryban történt változásokat letölti a local repositoryba
+	git pull <link>
+
+7. Repository átnevezése
+	A repositoryban a settings menüpontban a General  alpontban a Repository Name field átírásávan lehet átnevezni
+
+8. A settings menüpontban a General  alpont legalján lehet megváltoztatni a visibility-t, átruházni a tulajdonjogot illetve törölni a repository-t.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UFT-8">
+        <title>táblázat fejléc és cím készítés</title>
+        <style>
+            table,td,th{ 
+            border: solid 1px black;
+            }
+            </style>
+    </head>
+    <body>
+
+       <table >
+            <caption><h2><b>Táblázat elemei</b></h2></caption>
+            <tr style="background-color: lightgray;color: gray;">
+                <th>
+                    <i>1.oszlop<br>fejléc</i>
+                </th>
+                <th>
+                    <i>2.oszlop<br>fejléc</i>
+                </th>
+                <th>
+                    <i>  3.oszlop<br>fejléc</i>
+                </th>
+            </tr>
+            <tr>
+                <td style="text-align: center; width: 100px;
+                height: 100px;vertical-align: middle;background-color: red;">1 sor 1.elem</td>
+                <td style="text-align: right; width: 100px;
+                height: 100px;vertical-align: top;background-color: red;">1 sor 2.elem</td>
+                <td style="text-align: center; width: 100px;
+                height: 100px;vertical-align:bottom ;background-color: red;">1 sor 3.elem</td>
+            </tr>
+            <tr style="background-color: lightgoldenrodyellow">
+                <td style="text-align: left;width: 100px;
+                height: 100px; vertical-align: middle;">2 sor 4.elem</td>
+                <td style="width: 100px;
+                height: 100px;">
+                <div style="width: 100px;
+                height: 100px;
+                overflow: scroll;">2 sor 5.elem</div></td>
+                <td style="text-align: right;
+                height: 100px;vertical-align: top; padding: 20px;">2 sor 6<br>elem</td>
+            </tr>
+            <tr style="background-color: lightgoldenrodyellow">
+                <td style="text-align: left; width: 100px;
+                height: 100px;vertical-align: middle;">3 sor 7.elem</td>
+                <td style="text-align: left; width: 100px;
+                height: 100px;vertical-align: middle; padding: 10px; background-color: yellow">3 sor 8.<br>elem</td>
+                <td style="text-align: left; width: 100px;
+                height: 100px;vertical-align: middle;">3 sor 9.eleme</td>
+            </tr>
+       </table>
+    </body>
+</html>

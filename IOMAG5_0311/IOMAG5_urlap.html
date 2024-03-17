@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <title>Űrlap</title>
+        <style>
+            html,body{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }
+            #buttons{
+                width: 500px;
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                margin: 10px;
+                justify-content: center;
+            }
+            .form_css{
+                background-color: paleturquoise;
+                width: 500px;
+                padding: 30px;
+                border-radius: 10px;
+            }
+
+            h1{
+                width: 500px;
+                text-align: center;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>IOMAG5 - Űrlap</h1>
+        <section class="form_css">
+            <form name="urlap" id="urlap" action="megoldas.php" method="post" target="_self">
+                Név: <input type="text" placeholder="Példa Patrik" id="name" name="nfield" required autocomplete="off" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,}" autofocus>
+                <br>
+                PIN: <input type="password" placeholder="000" id="pin" name="pfield" title="3 jegyű PIN kód" required pattern="[0-9]{3}" >
+                <br>
+                Kedvenc Gyümölcs: <input type="text" name="fruit" id="fruit" list="fruitlist" placeholder="---">
+                <datalist id="fruitlist">
+                    <option value="Málna">Nyári </option>
+                    <option value="Eper">Földi</option>
+                    <option value="Szőlő"></option>
+                    <option value="Banán">Brazil</option>
+                    <option value="Alma"></option>
+                </datalist>
+                <br>
+                Életkor: <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder="10">
+                <br>
+                Lábméret: <input type="number" id="foot" name="foot" min="25" max="50" step="0.5" placeholder="38">
+                <br>
+                Önbizalom: <input type="range" id="onbiz" name="onbiz" min="0" max="100" step="1" placeholder="50">
+                <br>
+            </form>
+        </section>
+        <div id="buttons">
+            <input type="submit" value="Elküld" form="urlap">
+            <input type="submit" value="Ellenőrzés nélküli küldés" formnovalidate form="urlap">
+        </div>
+    </body>
+</html>

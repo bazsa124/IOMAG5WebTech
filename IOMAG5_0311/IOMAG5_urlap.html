@@ -31,7 +31,9 @@
         </style>
     </head>
     <body>
-        <h1>IOMAG5 - Űrlap</h1>
+        <header style="width: 600px; border-bottom: 3px black solid;">
+            <h1>IOMAG5 - Űrlap</h1>
+        </header>
         <section class="form_css">
             <form name="urlap" id="urlap" action="megoldas.php" method="post" target="_self">
                 Név: <input type="text" placeholder="Példa Patrik" id="name" name="nfield" required autocomplete="off" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,}" autofocus>
@@ -59,5 +61,10 @@
             <input type="submit" value="Elküld" form="urlap">
             <input type="submit" value="Ellenőrzés nélküli küldés" formnovalidate form="urlap">
         </div>
+        <footer style="text-align: right; width: 600px; font-size: smaller; border-top: 3px black solid;">
+            Forrás: <a href="http://html5doctor.com/" target="_blank">http://html5doctor.com/</a><br>
+            Formátumok: <a href="https://www.html5pattern.com/" target="_blank">https://www.html5pattern.com/</a><br>
+            JavaScript REGEX: <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">https://www.w3schools.com/jsref/jsref_obj_regexp.asp</a>
+        </footer>
     </body>
 </html>

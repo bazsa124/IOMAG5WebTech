@@ -28,18 +28,30 @@
                 text-align: center;
                 font-style: italic;
             }
+
+            header{
+                width: 600px; 
+                border-bottom: 3px black solid;
+            }
+
+            footer{
+                text-align: right; 
+                width: 600px; 
+                font-size: smaller; 
+                border-top: 3px black solid;
+            }
         </style>
     </head>
     <body>
-        <header style="width: 600px; border-bottom: 3px black solid;">
-            <h1>IOMAG5 - Űrlap</h1>
+        <header>
+            <h1>IOMAG5 - HTML5 Űrlap</h1>
         </header>
         <section class="form_css">
             <form name="urlap" id="urlap" action="megoldas.php" method="post" target="_self">
-                Név: <input type="text" placeholder="Példa Patrik" id="name" name="nfield" required autocomplete="off" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,}" autofocus>
-                <br>
-                PIN: <input type="password" placeholder="000" id="pin" name="pfield" title="3 jegyű PIN kód" required pattern="[0-9]{3}" >
-                <br>
+                Név: <input type="text" placeholder="Példa Patrik" id="name" name="name" required autocomplete="off" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,30}" autofocus>
+                <br><br>
+                PIN: <input type="password" placeholder="000" id="pin" name="pin" autocomplete="off" title="3 jegyű PIN kód" required pattern="[0-9]{3}" >
+                <br><br>
                 Kedvenc Gyümölcs: <input type="text" name="fruit" id="fruit" list="fruitlist" placeholder="---">
                 <datalist id="fruitlist">
                     <option value="Málna">Nyári </option>
@@ -48,20 +60,20 @@
                     <option value="Banán">Brazil</option>
                     <option value="Alma"></option>
                 </datalist>
-                <br>
-                Életkor: <input type="number" id="age" name="age" min="1" max="100" step="1" placeholder="10">
-                <br>
+                <br><br>
+                Életkor: <input type="number" id="age" name="age" min="10" max="100" step="1" placeholder="18">
+                <br><br>
                 Lábméret: <input type="number" id="foot" name="foot" min="25" max="50" step="0.5" placeholder="38">
-                <br>
-                Önbizalom: <input type="range" id="onbiz" name="onbiz" min="0" max="100" step="1" placeholder="50">
-                <br>
+                <br><br>
+                Önbizalom: 0 &nbsp;&nbsp;<input type="range" id="onbiz" name="onbiz" min="0" max="100" step="1" placeholder="50" style="width:300px;">&nbsp; &nbsp;100
+                <br><br>
             </form>
         </section>
         <div id="buttons">
-            <input type="submit" value="Elküld" form="urlap">
+            <input type="submit" value="Elküld" form="urlap" formmethod="post" formaction="megoldas.php">
             <input type="submit" value="Ellenőrzés nélküli küldés" formnovalidate form="urlap">
         </div>
-        <footer style="text-align: right; width: 600px; font-size: smaller; border-top: 3px black solid;">
+        <footer>
             Forrás: <a href="http://html5doctor.com/" target="_blank">http://html5doctor.com/</a><br>
             Formátumok: <a href="https://www.html5pattern.com/" target="_blank">https://www.html5pattern.com/</a><br>
             JavaScript REGEX: <a href="https://www.w3schools.com/jsref/jsref_obj_regexp.asp" target="_blank">https://www.w3schools.com/jsref/jsref_obj_regexp.asp</a>

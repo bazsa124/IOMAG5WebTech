@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IOMAG5 - Video</title>
+        <style>
+            html,body{
+                font-size: large;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            header{
+                font-style: italic;
+                width: 700px;
+                text-align: center;
+                border-bottom: 3pt black solid;
+                margin: 10px;
+            }
+
+            footer{
+                width: 700px;
+                text-align: right;
+                border-top: 3pt black solid;
+                margin: 10px;
+            }
+            video{
+                margin: 10px;
+            }
+            #cp{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>IOMAG5 - Videolejátszó</h1>
+        </header>
+        <video id="CSB_Video" width="700px" height="auto" controls autoplay="off">
+            <source src="IOMAG5_video.mp4" type="video/mp4">
+        </video>
+        <p style="width: 700px; border-top: 3pt black solid; margin: 10px; margin-bottom: 10px;">
+        Control Panel
+        <section>
+            <div id="cp">
+                <div>
+                    <button onclick="Play()">Play</button> 
+                    <button onclick="Stop()">Stop</button> 
+                    &nbsp; &nbsp; &nbsp;
+                    <button onclick="Play_Stop()">Play/Stop</button>
+                </div>
+                <div>
+                    <button onclick="Silence()">Néma</button> 
+                    <button onclick="Quite()">Halk</button> 
+                    <button onclick="Loud()">Hangos</button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button onclick="Vslow()">Nagyon Lassú</button> 
+                    <button onclick="Slow()">Lassú</button> 
+                    <button onclick="Normal()">Normál</button>
+                    <button onclick="Fast()">Gyors</button> 
+                    <button onclick="VFast()">Nagyon Gyors</button>
+                </div>
+                <div>
+                    <button onclick="Small()">Kicsi</button> 
+                    <button onclick="Mid()">Normál</button> 
+                    <button onclick="Big()">Nagy</button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button onclick="Ended()">befejeződött-e</button> 
+                    <button onclick="Vid_Length()">videó hossza (mp)</button> 
+                    <button onclick="Current_Pos()">jelenlegi pozíció</button>
+                </div>
+                    <p id="txt"></p>            
+                </div>
+        </section>
+        <footer>
+            <a href="https://www.w3schools.com/html/html5_video.asp">https://www.w3schools.com/html/html5_video.asp</a>
+        </footer>
+
+        <script>
+            var video =document.getElementById('CSB_Video');
+            
+            function Play(){
+                video.play();
+            }
+
+            function Stop(){
+                video.pause();
+            }
+
+            function Play_Stop(){
+                if (video.paused) 
+                    video.play(); 
+                else 
+                    video.pause(); 
+            }
+
+            function Silence(){
+                video.muted=true;
+            }
+
+            function Quite(){
+                video.muted=false;
+                video.pl;
+            }
+
+            function Loud(){
+                video.muted=false;
+                video.volume=100;
+            }
+
+            function Vslow(){
+                video.playbackRate=0.25;
+            }
+            function Slow(){
+                video.playbackRate=0.5;
+            }
+            function Normal(){
+                video.playbackRate=1.0;
+            }
+            function Fast(){
+                video.playbackRate=1.5;
+            }
+            function VFast(){
+                video.playbackRate=2.0;
+            }
+
+            function Small(){
+                video.style.width= "200px" ;
+            }
+            function Mid(){
+                video.style.width= "500px" ;
+            }
+            function Big(){
+                video.style.width= "700px" ;
+            }
+            function Ended(){
+                if(!video.ended)
+                    document.getElementById("txt").innerHTML="Még nem fejeződött be.";
+                else
+                    document.getElementById("txt").innerHTML="Befejeződött.";
+            }
+            function Vid_Length(){
+                document.getElementById("txt").innerHTML="A videó hossza: "+video.duration;
+            }
+            function Current_Pos(){
+                document.getElementById("txt").innerHTML="A jelenlegi pozíció: "+video.currentTime;
+            }
+        </script>
+    </body>
+</html>

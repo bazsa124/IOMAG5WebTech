@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>IOMAG5 - Audio</title>
+        <style>
+            html,body{
+                font-size: large;
+                font-family: 'Times New Roman', Times, serif;
+            }
+            header{
+                font-style: italic;
+                width: 700px;
+                text-align: center;
+                border-bottom: 3pt black solid;
+                margin: 10px;
+            }
+
+            footer{
+                width: 700px;
+                text-align: left;
+                border-top: 3pt black solid;
+                margin: 10px;
+            }
+            video{
+                margin: 10px;
+            }
+            #cp{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Audio - zene, hang -lejátszása_IOMAG5</h1>
+        </header>
+        <audio id="aud_main" src=".\\jazzy.mp3"controls onended="End()"></audio>
+        <audio id="yes" src="yes.mp3"></audio>
+        <audio id="no" src="no.mp3"></audio>
+        <p style="width: 700px; border-top: 3pt black solid; margin: 10px; margin-bottom: 10px;">
+        Control Panel
+        <section>
+            <div id="cp">
+                <div>
+                    <button onclick="Play_Stop()">Lejátszás/Szünet</button> 
+                    &nbsp; &nbsp; &nbsp;
+                    <button onclick="PlayNeg()">Negatív</button> 
+                    &nbsp; &nbsp; &nbsp;
+                    <button onclick="PlayPoz()">Pozitív</button>
+                </div>
+                <div>
+                    <button onclick="Silence()">Néma</button> 
+                    <button onclick="Quite()">Halk</button> 
+                    <button onclick="Loud()">Hangos</button>
+                    &nbsp; &nbsp; &nbsp;
+                    <button onclick="Vslow()">Nagyon Lassú</button> 
+                    <button onclick="Slow()">Lassú</button> 
+                    <button onclick="Normal()">Normál</button>
+                    <button onclick="Fast()">Gyors</button> 
+                    <button onclick="VFast()">Nagyon Gyors</button>
+                </div>
+                <div>
+                    <button onclick="Ended()">befejeződött-e</button> 
+                    <button onclick="Vid_Length()">audio hossza (mp)</button> 
+                    <button onclick="Current_Pos()">jelenlegi pozíció</button>
+                    <button onclick="JumpTo()">Ugrás másfél perchez</button>
+                </div>
+                    <p id="txt"></p>            
+                </div>
+        </section>
+        <footer>
+            <h2>Forrás</h2>
+            <a href="https://www.w3schools.com/html/html5_audio.asp">https://www.w3schools.com/html/html5_audio.asp</a>
+        </footer>
+
+        <script>
+            var audio =document.getElementById('aud_main');
+            
+            function PlayNeg(){
+                document.getElementById('no').play();
+            }
+            function PlayPoz(){
+                document.getElementById('yes').play();
+            }
+            function Play_Stop(){
+                if (audio.paused) 
+                audio.play(); 
+                else 
+                audio.pause(); 
+            }
+
+            function Silence(){
+                audio.muted=true;
+            }
+
+            function Quite(){
+                audio.muted=false;
+                audio.volume=50;
+            }
+
+            function Loud(){
+                audio.muted=false;
+                audio.volume=100;
+            }
+
+            function Vslow(){
+                audio.playbackRate=0.25;
+            }
+            function Slow(){
+                audio.playbackRate=0.5;
+            }
+            function Normal(){
+                audio.playbackRate=1.0;
+            }
+            function Fast(){
+                audio.playbackRate=1.5;
+            }
+            function VFast(){
+                audio.playbackRate=2.0;
+            }
+
+            function Ended(){
+                if(!audio.ended)
+                    alert("Még nem fejeződött be.");
+                else
+                alert("Befejeződött.");
+            }
+            function Vid_Length(){
+                alert("A videó hossza: "+audio.duration);
+            }
+            function Current_Pos(){
+                alert("A jelenlegi pozíció: "+audio.currentTime);
+            }
+            function JumpTo(){
+                audio.currentTime=90;
+            }
+
+            function End() {alert('VÉGE'); }
+        </script>
+    </body>
+</html>

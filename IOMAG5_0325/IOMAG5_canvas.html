@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas - IOMAG5</title>
+        <meta charset="UTF-8">
+        <style>
+            #canvas-wrap { position:relative } /* Make this a positioned parent */
+            #overlay     { position:absolute;
+                width: 700px;
+                text-align: center;
+                top: 10px;
+                left: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Rajzolás a vászonra - IOMAG5</h2>
+        </header>
+        
+        <div id="canvas-wrap">
+            <canvas id="CSBCanvas" width="700px" height="350px" style=" border: 1px black solid"></canvas>
+            <div id="overlay" style="text-align: center; color:orange; font-size: xx-large;">Mérnökinformatika 2024</div>
+          </div>
+        <script>
+            var csb = document.getElementById("CSBCanvas");
+            var csbx = csb.getContext("2d");
+            pic =new Image();
+            pic.src=".\\iit.jpg";
+            
+            csbx.beginPath();
+            var grd = csbx.createRadialGradient(175,107,10,200,100,75);
+            grd.addColorStop(0, "yellow");
+            grd.addColorStop(0.3, "purple");
+            grd.addColorStop(1, " green");
+            
+            csbx.fillStyle = grd;
+            csbx.fillRect(100, 80, 150, 75);
+
+            csbx.beginPath();
+            csbx.lineWidth = 5;
+            csbx.strokeStyle="darkblue";
+            csbx.rect(70, 170, 250, 150);
+            csbx.stroke();
+
+            csbx.beginPath();
+            csbx.arc(400, 140, 50, 0.25 * Math.PI,1.7* Math.PI);
+            csbx.fillStyle = "orange";
+            csbx.lineWidth = 5;
+            csbx.strokeStyle="darkblue";
+            csbx.stroke();
+            csbx.fill();
+
+            csbx.beginPath();
+            pic.onload=function (e){csbx.drawImage(pic, 700,520,200, 100,500,250,200,100);}
+            //csbx.
+        </script>
+        <footer>
+
+        </footer>
+        
+    </body>
+    
+</html>

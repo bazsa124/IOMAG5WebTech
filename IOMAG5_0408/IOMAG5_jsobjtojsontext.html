@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS objektumot konvertálja JSON Text</title>
+</head>
+
+<body>
+    <h2>JS objektumot konvertálja JSON Text</h2>
+    <p id="output"></p>
+    <script>
+        const obj = {name:"Kis Pista",postal_code:"5123",city:"Szerencs",university:"ME"};
+        const myJSON = JSON.stringify(obj);
+        document.getElementById("output").innerHTML=myJSON;
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tömbökön belüli tömbök ciklusa</title>
+</head>
+
+<body>
+    <h2>Tömbökön belüli tömbök ciklusa</h2>
+    <p id="output">
+        
+    </p>
+    <script>
+        const out=document.getElementById("output");
+        const CSBObj = {
+            "name": "Csákó Balázs ",
+            "age": 20,
+            "cars": [
+                {"name": "Toyota", "models": ["CHR", "Corolla", "Proace"]},
+                {"name": "Ford", "models": ["Kuga", "Mondeo", "Mustang"]},
+                {"name": "BMW", "models": ["320", "X3", "X5"]},
+                {"name": "Fiat", "models": ["500", "Panda", "Tipo"]}
+            ]
+        }
+        
+        output.innerHTML='    '+CSBObj.name+', age: '+CSBObj.age +', cars:';
+        for (let i=0; i<CSBObj.cars.length; i++)
+        {
+            let array=CSBObj.cars[i];
+            let temp=document.createElement('h3');
+            temp.innerText=array.name;
+            out.appendChild(temp);
+            let list=document.createElement('ul');
+            for(var j=0; j<array.models.length;j++)
+            {
+                let l=document.createElement('li');
+                l.innerText=array.models[j];
+                list.appendChild(l);
+
+            }
+            output.appendChild(list);
+            
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON megvalósítása – JavaScript</title>
+</head>
+
+<body>
+    <h2>JSON megvalósítása – JavaScript</h2>
+    <p id="output"></p>
+    <script>
+        const out=document.getElementById("output");
+        const text = '{"könyvek": {"könyv": [{"szerző": "Nyékyné Dr. Gaizler Judit","cím": "Java 2 I-II. - Útikalauz programozóknak 5.0","kiadási_év": 2009},{"szerző": "Reiter István","cím": "C# programozás lépésről lépésre","kiadási_év": 2018}]}}';
+        const obj = JSON.parse(text);
+        let array=obj["könyvek"]["könyv"];
+        for (let i=0; i<array.length; i++)
+        {
+            let temp=document.createElement('p');
+            temp.innerText=array[i]['szerző']+ ': ' + array[i]['cím']+ ', ' +array[i]['kiadási_év'];
+            out.appendChild(temp);
+        }
+    </script>
+</body>
+</html>
+

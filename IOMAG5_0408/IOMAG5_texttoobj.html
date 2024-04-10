@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Text konvertálása JavaScript objektummá!</title>
+</head>
+
+<body>
+    <h2>JSON Text konvertálása JavaScript objektummá!</h2>
+    <p id="output"></p>
+    <script>
+        const text = '{"name":"Kis Pista","postal_code":"5123","city":"Szerencs","university":"ME"}';
+        const obj = JSON.parse(text);
+        document.getElementById("output").innerHTML = obj.name + ", " + obj.university+", lakcím: "+obj.postal_code+" "+obj.city;
+    </script>
+</body>
+</html>

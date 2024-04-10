@@ -1,0 +1,16 @@
+{
+    "könyvek": {
+      "könyv": [
+        {
+          "szerző": "Nyékyné Dr. Gaizler Judit",
+          "cím": "Java 2 I-II. - Útikalauz programozóknak 5.0",
+          "kiadási_év": 2009
+        },
+        {
+          "szerző": "Reiter István",
+          "cím": "C# programozás lépésről lépésre",
+          "kiadási_év": 2018
+        }
+      ]
+    }
+  }

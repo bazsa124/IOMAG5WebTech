@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="3.js" defer></script>
+    <title>jQuery feladatok</title>
+    <style>
+        #pop_up {
+            display: inline-block;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery feladatok</h1>
+    <p class="hide_1">
+        A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni. <span id="katt"><b>Kattints ide</b>, és eltűnik!</span>
+    </p>
+    <p class="hide_2">
+        Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja. <span id="katt2"><b>Kattints ide duplán</b>, és eltűnik!</span>
+    </p><br>
+    <p>
+        <form id="form" method="post">
+            <label>Név: &nbsp;&nbsp; 
+                <input type="text" name="name" id="name" placeholder="Név">
+            </label>
+            <br>
+            <label>E-mail: &nbsp;&nbsp;
+                <input type="email" name="email" id="email" placeholder="Email">
+            </label>
+            <br>
+            <label>Jelszó: &nbsp;&nbsp;
+                <input type="password" name="jelszo" id="jelszo" placeholder="Jelszó">
+            </label>
+            <br>
+            <br>
+            <button id="btn">Jelentkezés</button>
+        </form>
+        <div id="pop_up">
+            A gombbal tudsz jelentkezni!
+        </div>
+    </p>
+</body>
+</html>

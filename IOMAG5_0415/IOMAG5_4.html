@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="4.js"></script>
+    <title>jQuery feladatok</title>
+    <style>
+        button{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery feladatok</h1>
+    <p class="hide"><b>A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</b></p>
+    <p class="hide">Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+    <p class="hide">Effekteket és animációt adhatunk HTML elemeinkhez. Számtalan plugint írtak hozzá.</p>
+    <br>
+    <button id="toHide">Elrejt</button> &nbsp;&nbsp; <button id="toShow">Megjelenít</button> &nbsp;&nbsp; <button id="toToggle">Be/Kikapcsol</button>
+    <br>
+    <br>
+        <form id="form" method="post" style="background-color: lightslategray; display: inline-block;
+        padding: 1rem;
+        padding-right: 10rem;
+        margin: 0.5rem;">
+        <h2>Űrlap</h2>
+            <label>Név: &nbsp;&nbsp; 
+                <input type="text" name="name" id="name" placeholder="Név">
+            </label>
+            <br>
+            <label>E-mail: &nbsp;&nbsp;
+                <input type="email" name="email" id="email" placeholder="Email">
+            </label>
+            <br>
+            <label>Jelszó: &nbsp;&nbsp;
+                <input type="password" name="jelszo" id="jelszo" placeholder="Jelszó">
+            </label>
+            <br>
+            <br>
+            <button id="btn">Jelentkezés</button>
+        </form>
+        <br>
+        <br>
+        <button id="o_1">Áttetszőség = 0.1</button> &nbsp;&nbsp; <button id="o_2">Áttetszőség = 0.5</button> &nbsp;&nbsp; <button id="o_3">Áttetszőség = 0.8</button>
+        <br>
+        <button id="toHideForm">Elrejt</button> &nbsp;&nbsp; <button id="toShowForm">Megjelenít</button> &nbsp;&nbsp; <button id="toToggleForm">Be/Kikapcsol</button>
+</body>
+</html>

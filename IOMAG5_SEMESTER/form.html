@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dogs - Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <script src="jquery-3.7.1.js"></script>
+        <link rel="stylesheet" href="kernel.css">
+        <style>
+            html,body{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }
+            p{
+                margin:5px;
+            }
+            #content{
+                
+                height: auto;
+                width:70vw;
+                display: flex;
+                gap: 3rem;
+                flex-direction:row;
+                padding-left: 2rem;
+                margin: 1rem 2rem 0.7rem 2rem;
+                align-items: center;
+            }
+            #content > div{
+                width:30vw;
+            }
+            input{
+                margin-bottom: 0.7rem;
+            }
+            .neccesarry{
+                color:red;
+                font-size: larger;
+                padding-right: 3px;
+            }
+            input[type="checkbox" i]{
+                margin-left: 0.7rem;
+                margin-bottom: 0.7rem;
+            }
+            form{
+                margin-bottom: 1rem;
+                width:fit-content;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <div id="sideBar">
+            <div id="home_icons"><span class="material-symbols-outlined">
+                home
+            </span></div>
+            <div id="list_icons"><span class="material-symbols-outlined">
+                list_alt
+                </span></div>
+            <div id="video_icons"><span class="material-symbols-outlined">
+                movie
+                </span></div>
+            <div id="form_icons"><span class="material-symbols-outlined">
+                fact_check
+                </span></div>
+            <div ><span class="material-symbols-outlined">
+                lightbulb
+                </span></div>
+        </div>
+        <div id="main">
+            <header><h1>Örökbe fogadás</h1></header>
+            <form>
+                <div id="content">
+                    <div>
+                        <h2>Személyes adatok</h2>
+                        <label>
+                            <span class="neccesarry">*</span>Név:<br>
+                            <input type="text" id="name" required autocomplete="off" placeholder="Példa Péter">
+                        </label>
+                        <br>
+                        <label>
+                            <span class="neccesarry">*</span>Email:<br>
+                            <input type="email" id="email" required autocomplete="off" placeholder="asd@asd.asd">
+                        </label>
+                        <br>
+                        <label>
+                            Telefon:<br>
+                            <input type="tel" id="telefon" placeholder="0620 111 1111">
+                        </label>
+                        <br>
+                        <label>
+                            <span class="neccesarry">*</span>Lakcím:<br>
+                            <input type="text" id="postal_code"placeholder="3300" required size="4"> &nbsp; <input type="text"  required id="address" placeholder="Eger, Példa utca 1">
+                        </label>
+                        <br>
+                        <label>
+                            Születési idő:<br>
+                            <input id="birth"type="date">
+                        </label>
+                        <br>
+                        <label>
+                            Háziállatok:
+                            <br>
+                            <input type="checkbox" id="chb_hare" value="hare"> <label for="chb_hare">Házinyúl</label> &nbsp;&nbsp;
+                            <input type="checkbox" id="chb_dog" value="dog"> <label for="chb_dog">Kutya</label> &nbsp;&nbsp;
+                            <input type="checkbox" id="chb_cat" value="cat"> <label for="chb_cat"><label>Macska</label> 
+                            <br>
+                            <input type="checkbox" id="chb_chicken" value="chicken"> <label for="chb_chicken">Házityúk</label> &nbsp;&nbsp;
+                            <input type="checkbox" id="chb_sheep" value="sheep"> <label for="chb_sheep">Birka</label> &nbsp;&nbsp;
+                            <input type="checkbox" id="chb_others" value="others"> <label for="chb_others"><label>Egyéb</label>
+                        </label>
+                    </div>
+                    <div>
+                        <h2>Kutya adatai</h2>
+                        <input type="text" name="dogs" id="dogs" list="available_dogs" autocomplete="off" placeholder="---">
+                        <br>
+                        <datalist id="available_dogs">
+                        </datalist>
+                        <img id="dog_pic" width="200px">
+                        <div id="informations">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./Pictures/adoptme.jpg" width="270px">
+                    </div>
+                </div>
+            <button id="send">Örökbe fogad</button> &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" id="clear">Töröl</button>
+            </form>
+            
+            <footer>
+                <h2>Linkek:</h2>
+            </footer>
+        </div>
+        <script>
+            var selected;
+            var dogs_data;
+            var pic=document.getElementById("dog_pic");
+            function load(){
+                document.getElementById("home_icons").addEventListener('click',function(){window.open('index.html',"_self")});
+                document.getElementById("list_icons").addEventListener('click',function(){window.open('list.html',"_self")});
+                document.getElementById("form_icons").addEventListener('click',function(){window.open('form.html',"_self")});
+                document.getElementById("video_icons").addEventListener('click',function(){window.open('video.html',"_self")});
+                document.getElementById("clear").addEventListener('click',function(){clearInformation();})
+                $(document).ready(function(){
+                    $("#dog_pic").hide();
+                    $("#informations").hide();
+                });
+
+                loadJSON();
+                
+            }
+
+            $(document).ready(function(){
+                $("#dogs").change(function(){
+                    $("#dog_pic").show();
+                    $("#informations").show();
+                    selected= this.value;
+                    clearInformation();
+                    addInformation();
+                });
+                $("#dogs").click(function(){document.getElementById("dogs").value = '';});
+            });
+            
+        function loadJSON(){
+            fetch("adopt.json")
+            .then(function(response) {
+                // Check if the request was successful
+                if (!response.ok) {
+                throw new Error('Network response was not ok');
+                }
+                // Parse the JSON response
+                return response.json();
+            })
+            .then(function(data) {
+                // Use the data as needed
+                dogs_data=data;
+                for(var i=0;i<data.length;i++)
+                {
+                    var temp=document.createElement('option');
+                    temp.innerText=data[i].breed;
+                    temp.value=data[i].name;
+                    $("#available_dogs").append(temp);
+                }
+            })
+            .catch(function(error) {
+                // Handle errors
+                console.error('Error loading JSON file:', error);
+            });
+        }
+
+        function clearInformation(){
+            var parentElement = document.getElementById("informations");
+                    // Loop through each child element
+                    if (parentElement.firstChild!=null) {
+                    // Remove all child nodes
+                    while (parentElement.firstChild) {
+                        parentElement.removeChild(parentElement.firstChild);
+                    }
+                    pic.src="";
+                    }
+
+        };
+
+        function addInformation(){
+            var found=false;
+            for(var i=0;i<dogs_data.length;i++)
+                    {
+                        if(dogs_data[i].name==selected)
+                        {
+                            found=true;
+                            pic.src=dogs_data[i].picture;
+                            var place = $('<p id="place">').text('Menhely: '+dogs_data[i].place);
+                            $('#informations').append(place);
+                            var age = $('<p id="age">').text('Kor: '+dogs_data[i].age);
+                            $('#informations').append(age);
+                            var health = $('<p id="health">').text('Egészségügyi információk:' +dogs_data[i].health);
+                            $('#informations').append(health);
+                            var good_with = $('<p id="good_with">').text('Jól kijön:' +dogs_data[i].good_with);
+                            $('#informations').append(good_with);
+                        }
+                    }
+                    if(!found)
+                    $('#informations').append("<p> Nincs ilyen kutya az adatbázisban'</p>");
+        };
+        </script>
+    </body>
+
+    
+</html>

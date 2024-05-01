@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> jQuery szolgáltatásai </title>
+        <meta charset="UTF-8">
+        <style>
+            #moving{
+                height: auto;
+                width:140px;
+                height: 180px;
+                font-size: 12pt;
+                background-color: green;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="1.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h2>jQuery feladatok - Attribútum</h2>
+        </header>
+        <button id="toText"><b>Szöveg</b></button> &nbsp;&nbsp; <button id="toHTML"><b>HTML</b></button> 
+        &nbsp;&nbsp; <button id="toValue"><b>Érték</b></button> &nbsp;&nbsp; <button id="toAttributes"><b>Paraméter</b></button>
+        <br>
+        <br>
+        <div id="moving"><b>ME GEIK - PTI
+            <br><br><br>
+            . . . . .
+        </b></div>
+        <br>
+        <form id="form" >
+            <label id="nameText">
+                <b>Név: </b>&nbsp; <input id="name" type="text">
+            </label>
+            <br><br>
+            <label id="mailText">
+                <b>Email: </b> &nbsp; <input id="mail" type="email">
+            </label>
+            <br><br>
+            <label id="passText">
+                <b>Jelszó: </b> &nbsp; <input id="pass" type="password">
+            </label>
+        </form>
+        <br><br>
+        <button id="send">Jelentkezés</button>
+        <br><br>
+        <b>Forrás: </b><a href="https://www.tutorialspoint.com/jquery/index.htm">https://www.tutorialspoint.com/jquery/index.htm</a>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+[
+    {
+        "name":"Józsi",
+        "breed":"Puli",
+        "picture":"./Pictures/Adopt/puli.jpg",
+        "place":"Csaba",
+        "health":"kurva jo",
+        "age":"69",
+        "good_with":"dogs,kids"
+    },
+
+    {
+        "name":"Jani",
+        "breed":"Bulldog",
+        "picture":"./Pictures/Adopt/puli.jpg",
+        "place":"Recsk",
+        "health":"dagadt",
+        "age":"anyad",
+        "good_with":"himself"
+    }
+]

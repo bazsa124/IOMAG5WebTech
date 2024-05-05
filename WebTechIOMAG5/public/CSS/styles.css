@@ -1,0 +1,31 @@
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #5C4033;
+    margin: 5px;
+    display: inline-grid;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .card > img{
+    width:70px;
+    height: auto;
+  }
+  
+  .card.flipped {
+    background-color: #fff;
+  }
+  
+  .restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

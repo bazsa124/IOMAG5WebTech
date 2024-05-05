@@ -1,0 +1,232 @@
+
+    [
+    {
+        "breed":"Magyar Vizsla",
+        "picture":"./Pictures/Breeds/mvizsla.jpg",
+        "desc":"A rövidszőrű magyar vizsla egy kiegyensúlyozott, intelligens vadászkutya. Aktív, barátságos és könnyen tanul. Gyönyörű vörös-arany szőrzettel rendelkezik és híres kiváló szaglásáról. Ideális választás aktív családoknak vagy vadászoknak. Játékos és odaadó természetű. Rendszeres testmozgásra és mentális stimulációra van szüksége a boldog élethez.",
+        "attibutes":{
+        "friendly":4,
+        "inteligent":2,
+        "bite":3,
+        "jump":3,
+        "kid":3,
+        "learning":2,
+        "guard":3,
+        "playfull":3,
+        "cat":1,
+        "energetic":5
+        },
+        "link_name":"Magyar vizsla",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/magyar-vizsla"
+
+    },
+
+    {
+        "breed":"Puli",
+        "picture":"./Pictures/Breeds/puli.jpg",
+        "desc":"A puli egy ősi magyar juhászkutya fajta, melyet hosszú, zsinóros szőrzete tesz különlegessé. Ezek a kutyák hűségesek, okosak és rendkívül aktívak. A pulik hajlamosak a családjuk védelmére és jó szinten alkalmazkodnak az otthoni élethez. A fajta szoros kapcsolatot ápol gazdáival és könnyen tanul. Fontos, hogy rendszeresen ápolják a szőrzetüket, hogy ne legyen gubancos vagy koszos. A pulik ideálisak aktív családoknak, akik sok időt töltenek a szabadban, és akik hajlandóak foglalkozni a fajta specifikus igényeivel.",
+        "attibutes":{
+        "friendly":3,
+        "inteligent":4,
+        "bite":3,
+        "jump":5,
+        "kid":4,
+        "learning":5,
+        "guard":5,
+        "playfull":3,
+        "cat":3,
+        "energetic":4
+        },
+        "link_name":"Puli",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/puli"
+
+    },
+
+    {
+        "breed":"Pumi",
+        "picture":"./Pictures/Breeds/pumi.jpg",
+        "desc":"A pumi egy közepes méretű, magyar juhászkutya fajta, melyet fürgesége és intelligenciája tesz különlegessé. Ezek a kutyák élénkek, játékosak és rendkívül odaadóak a családjukhoz. A pumik gyakran kiemelkedően intelligensek és könnyen tanulnak, de ugyanakkor önfejűek is lehetnek, így követelnek egy kis konzekvens nevelést. Rövid, durva szőrzetük van, mely könnyen kezelhető, de rendszeres ápolást igényel. A pumik nagyon aktívak és szükségük van rendszeres testmozgásra és szellemi stimulációra. Ideális választás energikus családoknak vagy aktív egyéneknek, akik szeretik bevonni kutyájukat a mindennapi tevékenységeikbe.",
+        "attibutes":{
+        "friendly":3,
+        "inteligent":5,
+        "bite":3,
+        "jump":5,
+        "kid":3,
+        "learning":3,
+        "guard":5,
+        "playfull":3,
+        "cat":2,
+        "energetic":4
+        },
+        "link_name":"Pumi",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/puli"
+
+    },
+
+    {
+        "breed":"Mudi",
+        "picture":"./Pictures/Breeds/mudi.jpg",
+        "desc":"A mudi egy ritka, közepes méretű magyar juhászkutya fajta, mely rendkívül intelligens és energikus. Ezek a kutyák kitűnnek a munkaszorgalmukkal és a hűségükkel a családjukhoz. A mudik gyorsan tanulnak és sokoldalúak, így könnyen alkalmazkodnak különböző környezetekhez és feladatokhoz. Rövid, durva szőrzetük van, mely könnyen kezelhető, de rendszeres ápolást igényel. Aktív életmódot élő családoknak vagy szabadidős sportolóknak ideális társak, akik készek foglalkozni a fajtára jellemző igényekkel és kihívásokkal.",
+        "attibutes":{
+        "learning":3,
+        "kid":3,
+        "friendly":3,
+        "inteligent":5,
+        "bite":2,
+        "jump":4,
+        "guard":4,
+        "playfull":4,
+        "cat":3,
+        "energetic":4
+        },
+        "link_name":"Mudi",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/mudi-kutya"
+
+    },
+
+    {
+        "breed":"Kuvasz",
+        "picture":"./Pictures/Breeds/kuvasz.jpg",
+        "desc":"A kuvasz egy nagy termetű, ősi magyar fajta, melyet eredetileg juhászkutyaként használtak. Ezek a kutyák rendkívül hűségesek és oltalmazóak a családjukhoz és a területükhöz. Bár barátságosak lehetnek a családjukhoz, idegenekkel szemben gyakran tartózkodóak. A kuvaszok rendkívül okosak és önállóak, de ugyanakkor igénylik a konzekvens nevelést és a korai szocializációt. A fajta erős őrzőösztönnel rendelkezik, és hajlamos lehet domináns viselkedésre más kutyákkal szemben. A megfelelő nevelés és sok mozgás és mentális stimuláció mellett a kuvaszok kitűnő családi kutyák lehetnek, különösen olyan gazdik számára, akik szeretnék, hogy egy erős, hűséges és intelligens társ legyen mellettük.",
+        "attibutes":{
+        "learning":2,
+        "kid":3,
+        "friendly":3,
+        "inteligent":4,
+        "bite":3,
+        "jump":4,
+        "guard":5,
+        "playfull":3,
+        "cat":2,
+        "energetic":3
+        },
+        "link_name":"Kuvasz",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/kuvasz"
+
+    },
+
+    {
+        "breed":"Komodor",
+        "picture":"./Pictures/Breeds/komodor.jpg",
+        "desc":"A komondor egy ősi magyar juhászkutya fajta, melyet hosszú, zsinóros szőrzete tesz különlegessé. Ezek a kutyák hűségesek, okosak és rendkívül aktívak. A komondorok hajlamosak a családjuk védelmére és jó szinten alkalmazkodnak az otthoni élethez. A fajta szoros kapcsolatot ápol gazdáival és könnyen tanul. Fontos, hogy rendszeresen ápolják a szőrzetüket, hogy ne legyen gubancos vagy koszos. A komondorok ideálisak aktív családoknak, akik sok időt töltenek a szabadban, és akik hajlandóak foglalkozni a fajta specifikus igényeivel.",
+        "attibutes":{
+        "learning":2,
+        "kid":3,
+        "friendly":3,
+        "inteligent":4,
+        "bite":3,
+        "jump":4,
+        "guard":5,
+        "playfull":2,
+        "cat":2,
+        "energetic":2
+        },
+        "link_name":"Komodor",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/komondor"
+
+    },
+
+    {
+        "breed":"Drótszőrű magyar vizsla",
+        "picture":"./Pictures/Breeds/dvizsla.jpg",
+        "desc":"A drótszőrű magyar vizsla egy kiváló vadászkutya, amelyet a 20. század elején tenyésztettek ki Magyarországon. Kiváló szaglása és kitartása miatt ideális vadászatra, különösen vízi madarak után. A fajta rendkívül intelligens és barátságos, jó viselkedésű és könnyen képezhető. A drótszőrű magyar vizsla erős kötődést ápol a családjához és nagyon szeret az emberekkel, beleértve a gyerekeket is. A szőrzete durva és vízálló, ami lehetővé teszi számára a kemény körülmények közötti munkavégzést. Rendszeres testmozgásra van szüksége és sok helyet igényel a mozgáshoz, így aktív gazdik számára ideális választás lehet.",
+        "attibutes":{
+        "learning":5,
+        "kid":4,
+        "friendly":3,
+        "inteligent":5,
+        "bite":2,
+        "jump":3,
+        "guard":3,
+        "playfull":4,
+        "cat":1,
+        "energetic":4
+        },
+        "link_name":"Drótszőrű magyar vizsla",
+        "link_href":"https://hu.wikipedia.org/wiki/Dr%C3%B3tsz%C5%91r%C5%B1_magyar_vizsla"
+
+    },
+
+    {
+        "breed":"Máltai selyemkutya",
+        "picture":"./Pictures/Breeds/mselyem.jpeg",
+        "desc":"A Máltai selyemkutya egy kicsi, elegáns kis kutya, melyet kifejezetten társaskutyaként tartanak. Jellemző rá a hosszú, selymes szőrzet, amely fehér színű. Barátságos, élénk, és nagyon ragaszkodó a családjához. Intelligens és jól képezhető, de néha makacs is lehet. Általában nagyon jó az emberekkel és más kutyákkal egyaránt, ami miatt kiváló választás lehet családoknak vagy idősebb személyeknek is. Mivel kis méretű, ideális lakásban való tartásra is. Rendszeres szőrzetápolásra van szüksége, és figyelembe kell venni, hogy a Máltai selyemkutya hajlamos lehet fogproblémákra és hidegérzékenységre is.",
+        "attibutes":{
+        "learning":4,
+        "kid":4,
+        "friendly":3,
+        "inteligent":4,
+        "bite":2,
+        "jump":3,
+        "guard":3,
+        "playfull":4,
+        "cat":3,
+        "energetic":3
+        },
+        "link_name":"Máltai selyemkutya",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/maltai-selyemkutya"
+
+    },
+
+    {
+        "breed":"Shiba Inu",
+        "picture":"./Pictures/Breeds/shiba.jpg",
+        "desc":"A Shiba Inu egy ősi japán kutyafajta, melyet eredetileg vadászatra tenyésztettek. Ezek a kutyák kis termetűek, ám erőteljes testfelépítésűek, és büszkék, élénkek jellemzőik. A Shiba Inuk intelligensek és függetlenek, de egyben makacsok is lehetnek. Szépségük és élénkségük miatt sokan kedvelik őket, de fontos tudni, hogy időigényes nevelést igényelnek a megfelelő viselkedés kialakításához. A Shiba Inuk hűségesek és ragaszkodóak lehetnek családjukhoz, de gyakran tartózkodóak is más emberekkel és kutyákkal szemben. Jól érzik magukat különböző környezetekben, beleértve a várost és a vidéket is, de aktív életmódra vágynak, és sok mozgásra van szükségük a boldog és kiegyensúlyozott élethez.",
+        "attibutes":{
+        "learning":2,
+        "kid":3,
+        "friendly":3,
+        "inteligent":4,
+        "bite":3,
+        "jump":3,
+        "guard":5,
+        "playfull":3,
+        "cat":2,
+        "energetic":4
+        },
+        "link_name":"Shiba Inu",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/shiba-inu"
+    },
+
+    {
+        "breed":"Németjuhász",
+        "picture":"./Pictures/Breeds/njuhasz.jpg",
+        "desc":"A Németjuhász egy kiváló munkakutya és családi társ is egyben. Erős és intelligens, kitűnő védelmi, nyomkövetési és engedelmességi képességekkel rendelkezik. Eredetileg juhászkutyaként használták, de manapság számos más területen is alkalmazzák, például rendőri munkában, mentőkutyaként és terápiás kutyaként is. Jellemzően hűséges, odaadó és könnyen képezhető. Fontos számára a szociális és fizikai stimuláció, valamint a rendszeres testmozgás. A megfelelő neveléssel és társadalmi interakciókkal a Németjuhász kiváló családi kutyaként is funkcionálhat, ahol aktív részese lehet a családi életnek.",
+        "attibutes":{
+        "learning":5,
+        "kid":5,
+        "friendly":3,
+        "inteligent":5,
+        "bite":5,
+        "jump":4,
+        "guard":5,
+        "playfull":5,
+        "cat":4,
+        "energetic":5
+        },
+        "link_name":"Németjuhász",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/shiba-inu"
+    },
+
+    {
+        "breed":"Pembroke Welsh Corgi",
+        "picture":"./Pictures/Breeds/corgi.jpeg",
+        "desc":"A Pembroke Welsh Corgi egy közepes méretű kutyafajta, amely kifejezetten ügyes és barátságos. Jellemzően rövid lábú, hosszú testű, és a három különálló fajtának az egyik, a másik a Cardigan Welsh Corgi. Ezek az energikus kutyák rendkívül intelligensek és könnyen taníthatók. Kiválóak családi kutyák és kedves társak, akik szeretik a fizikai aktivitást és a mentális stimulációt. Hajlamosak lehetnek a túlsúlyra, ezért fontos a rendszeres testmozgás és az egészséges táplálkozás biztosítása számukra.",
+        "attibutes":{
+        "learning":3,
+        "kid":4,
+        "friendly":3,
+        "inteligent":3,
+        "bite":3,
+        "jump":4,
+        "guard":4,
+        "playfull":3,
+        "cat":3,
+        "energetic":3
+        },
+        "link_name":"Pembroke Welsh Corgi",
+        "link_href":"https://www.zooplus.hu/magazin/kutya-magazin/kutyafajtak/pembroke-welsh-corgi"
+    }
+]
+
+       

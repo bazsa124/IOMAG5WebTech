@@ -1,0 +1,41 @@
+[
+    {
+        "name": "Józsi",
+        "breed": "Puli",
+        "picture": "./Pictures/Adopt/puli.jpg",
+        "place": "Békéscsaba",
+        "health": "Nagyon jó állapotban van, rendszeresen ellenőrzött",
+        "age": "2",
+        "good_with": "kutyák"
+      },
+
+    {
+        "name": "Bodri",
+        "breed": "Németjuhász",
+        "picture": "./Pictures/Adopt/njuhasz.jpg",
+        "place": "Eger",
+        "health": "Egészséges, friss oltásokkal rendelkezik",
+        "age": "3",
+        "good_with": "gyerekek, kutyák"
+      },
+
+      {
+        "name": "Lili",
+        "breed": "Tacskó",
+        "picture": "./Pictures/Adopt/tacsi.jpg",
+        "place": "Budapest",
+        "health": "Kiváló állapotú, rendszeresen mozog",
+        "age": "4",
+        "good_with": "kutyák, macskák"
+      },
+
+      {
+        "name": "Fürkész",
+        "breed": "Agár",
+        "picture": "./Pictures/Adopt/agar.jpg",
+        "place": "Pécs",
+        "health": "Kitűnő egészségben van, évente állatorvoshoz jár",
+        "age": "5",
+        "good_with": "idegenek"
+      }
+]

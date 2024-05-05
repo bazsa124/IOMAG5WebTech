@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dogs - List</title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <script src="./Scripts/jquery-3.7.1.js"></script>
+        <script src="./Scripts/list.js"></script>
+        <link rel="stylesheet" href="./CSS/kernel.css">
+        <style>
+            #main{
+                width:70vw;
+            }
+            #content{
+                
+                height: auto;
+                display: flex;
+                gap: 3rem;
+                flex-direction: row;
+                margin: 2rem;
+                align-items: left;
+            }
+            #attributes{
+                display: flex;
+                flex-direction: row;
+                gap:1vw;
+                margin: 2vw;
+                text-align: left;
+            }
+            #attributes > div{
+                width:15vw;
+                
+            }
+
+            #attributes > div >div >img{
+                width:15px;
+                height: 15px;
+            }
+            #next,#previous{
+                width:3vw;
+                height: fit-content;
+                border-radius: 2rem;
+                text-align: center;
+                align-items: center;
+                line-height: 0;
+            }
+            #previous{
+                padding-left: 1.2rem;
+            }
+            #describtion{
+                height:25vh;
+                overflow-y: auto;
+                text-align: justify;
+            }
+            #moving_pic{
+                position: fixed; 
+                top: 0;
+                left: 0;
+                width:100px; /* Semi-transparent black overlay */
+                z-index: 9999;
+            }
+            #space {
+                z-index: 9000;
+                position: fixed;
+                width: 20px;
+                left:0;
+                height: 20px;
+                background: none !important;
+            }
+            .goodPawn{
+                color: green;
+            }
+            #attributes > div>div>span>.material-symbols-outlined{
+                margin:1px;
+                font-size:x-small;
+
+            }
+            #attributes > div > div{
+                font-size:x-small;
+
+            }
+            #dog_pic{
+                width:200px;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <div id="space">
+            <img id="moving_pic" src="./Pictures/moving.png">
+        </div>
+        <nav id="sideBar">
+            <div id="home_icons"><span class="material-symbols-outlined">
+                home
+            </span></div>
+            <div id="list_icons"><span class="material-symbols-outlined">
+                list_alt
+                </span></div>
+            <div id="video_icons"><span class="material-symbols-outlined">
+                movie
+                </span></div>
+            <div id="form_icons"><span class="material-symbols-outlined">
+                fact_check
+                </span></div>
+            <div id="game"><span class="material-symbols-outlined">
+                playing_cards
+                </span></div>
+            </nav>
+        <div id="previous">
+            <span class="material-symbols-outlined">
+                arrow_back_ios
+                </span>
+        </div>
+        <div id="main">
+            <header><h1>Kutyák</h1></header>
+            <div>
+                <h2 id="dog_breed">Kutya nev</h2>
+                <div id="content">
+                    <div>
+                        <img id="dog_pic" src="">
+                    </div>
+                    <div>
+                        <h3>Leírás</h3>
+                        <p id="describtion">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae in placeat iste unde consequuntur, 
+                            quo doloribus magnam sunt autem dolorum at soluta, accusantium ratione corporis rem quod nulla explicabo repellat.
+                        </p>
+                    </div>
+                </div>
+                <div id="attributes">
+                    <div>
+                        <div id="friendly">Barátságos: &nbsp; <span></span> </div>
+                        <div id="inteligent">Inteligens: &nbsp; <span></span> </div>
+                    </div>
+                    <div>
+                        <div id="bite">Harapásra hajlamos: &nbsp; <span></span></div>
+                        <div id="jump">Ugrásra hajlamos: &nbsp; <span></span></div>
+                    </div>
+                    <div>
+                        <div id="kid">Gyerekbarát: &nbsp; <span></span></div>
+                        <div id="learning">Taníthatóság: &nbsp; <span></span></div>
+                    </div>
+                    <div>
+                        <div id="guard">Házőrző: &nbsp; <span></span></div>
+                        <div id="playfull">Játékos: &nbsp; <span></span></div>
+                    </div>
+                    <div>
+                        <div id="cat">Macska tűrő: &nbsp; <span></span></div>
+                        <div id="energetic">Energetikus: &nbsp; <span></span></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <footer>
+                <h2>Linkek:</h2>
+                <a id="link" href=""></a>
+
+            </footer>
+        </div>
+        <div id="next">
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+                </span>
+        </div>
+    </body>
+
+    
+</html>

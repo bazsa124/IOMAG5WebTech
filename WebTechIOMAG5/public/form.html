@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dogs - Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <script src="./Scripts/jquery-3.7.1.js"></script>
+        <script src="./Scripts/form.js"></script>
+        <link rel="stylesheet" href="./CSS/kernel.css">
+        <style>
+            html,body{
+                font-family: 'Times New Roman', Times, serif;
+                font-size: medium;
+            }
+            p{
+                margin:5px;
+            }
+            #content{
+                
+                height: auto;
+                width:75vw;
+                display: flex;
+                gap: 3rem;
+                height: 65vh;
+                flex-direction:row;
+                padding-left: 2rem;
+                margin: 0.5rem 2rem 0.5rem 2rem;
+                overflow-y: auto;
+            }
+            #content > div{
+                width:35vw;
+            }
+            input{
+                margin-bottom: 0.7rem;
+            }
+            .neccesarry{
+                color:red;
+                font-size: larger;
+                padding-right: 3px;
+            }
+            .error {
+                border: 1px solid red;
+            }
+            input[type="checkbox" i]{
+                margin-left: 0.7rem;
+                margin-bottom: 0.7rem;
+            }
+            form{
+                margin-bottom: 1rem;
+                width:fit-content;
+            }
+            #adopt_pic{
+                height: 60vh !important;
+                align-content:center;
+            }
+            #adopt_pic > img{
+                border-radius: 1rem;
+            }
+            #informations > p{
+                line-height: 2;
+            }
+        </style>
+    </head>
+    <body onload="load()">
+        <nav id="sideBar">
+            <div id="home_icons"><span class="material-symbols-outlined">
+                home
+            </span></div>
+            <div id="list_icons"><span class="material-symbols-outlined">
+                list_alt
+                </span></div>
+            <div id="video_icons"><span class="material-symbols-outlined">
+                movie
+                </span></div>
+            <div id="form_icons"><span class="material-symbols-outlined">
+                fact_check
+                </span></div>
+                <div id="game"><span class="material-symbols-outlined">
+                    playing_cards
+                    </span></div>
+        </nav>
+        <div id="main">
+            <header><h1>Örökbe fogadás</h1></header>
+            <form>
+                <div id="content">
+                    <div>
+                        <h2>Személyes adatok</h2>
+                        <label>
+                            <span class="neccesarry">*</span>Név:<br>
+                            <input type="text" id="name" required autocomplete="off" placeholder="Példa Péter" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,30}">
+                        </label>
+                        <br>
+                        <label>
+                            <span class="neccesarry">*</span>Email:<br>
+                            <input type="email" id="email" required autocomplete="off" placeholder="asd@asd.asd">
+                        </label>
+                        <br>
+                        <label>
+                            Telefon:<br>
+                            <input type="tel" id="telefon" placeholder="0620 111 1111" pattern="[0-9]{11}">
+                        </label>
+                        <br>
+                        <label>
+                            <span class="neccesarry">*</span>Lakcím:<br>
+                            <input type="text" id="postal_code"placeholder="3300" required size="4" pattern="[0-9]{4}"> &nbsp; <input type="text"  required id="address" placeholder="Eger, Példa utca 1" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóíö123456789]){3,30}">
+                        </label>
+                        <br>
+                        <label>
+                            Születési idő:<br>
+                            <input id="birth"type="date">
+                        </label>
+                        <br>
+                        <label>
+                            Háziállatok:
+                            <br>
+                            <input type="radio" id="chb_hare" value="hare"> <label for="chb_hare">Házinyúl</label> &nbsp;&nbsp;
+                            <input type="radio" id="chb_dog" value="dog"> <label for="chb_dog">Kutya</label> &nbsp;&nbsp;
+                            <input type="radio" id="chb_cat" value="cat"> <label for="chb_cat">Macska</label> 
+                            <br>
+                            <input type="checkbox" id="chb_chicken" value="chicken"> <label for="chb_chicken">Házityúk</label> &nbsp;&nbsp;
+                            <input type="checkbox" id="chb_sheep" value="sheep"> <label for="chb_sheep">Birka</label> &nbsp;&nbsp;
+                            <input type="checkbox" id="chb_others" value="others"> <label for="chb_others">Egyéb</label>
+                            <div id="others_input"></div>
+                        </label>
+                    </div>
+                    <div>
+                        <h2>Kutya adatai</h2>
+                        <input type="text" name="dogs" id="dogs" list="available_dogs" autocomplete="off" placeholder="---">
+                        <br>
+                        <datalist id="available_dogs">
+                        </datalist>
+                        <img id="dog_pic" width="200px">
+                        <div id="informations">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div id="adopt_pic">
+                        <img src="./Pictures/adoptme.jpg" width="250px">
+                    </div>
+                </div>
+            <button id="send" onclick="checkValid()">Örökbe fogad</button> &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" id="clear">Töröl</button>
+            </form>
+            
+            <footer>
+                <h2>Linkek:</h2>
+            </footer>
+        </div>
+    </body>
+
+    
+</html>

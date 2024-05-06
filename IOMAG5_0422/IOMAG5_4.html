@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="IOMAG5_4.js" defer></script>
+    <title>jQuery feladatok - Számoló gép</title>
+    <style>
+         input[type="number"] {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery feladat</h1>
+    <h2>Adjon meg két számot!</h2>
+    <p>
+        <b>A=</b> <input type="number" id="valueA" >
+    </p>
+    <br>
+    <p>
+        <b>B=</b> <input type="number" id="valueB">
+    </p>
+    <br>
+    <fieldset>
+        <input type="radio" name="muvelet" value="szor">A*B 
+        <br>
+        <input type="radio" name="muvelet" value="oszt">A/B 
+        <br>
+        <input type="radio" name="muvelet" value="meg" checked> A+B 
+        <br>
+        <input type="radio" name="muvelet" value="kivon">A-B 
+        <br>
+    </fieldset><br>
+    <button id="toCount">Számol</button><br>
+    <p id="result">Eredmény: </p>
+</body>

@@ -1,0 +1,1 @@
+var obj=JSON.stringify("{'course_name':'Web Technológiák alapjai','oktato':'Agárdi Anita','szak':'BI,PTI','time':{'day':'Hétfő','from':'8:00','to':'10:00'},'place':'A/1 II. em. 218','address':{'street':'Egyetemváros','city':'Miskolc','postal_code':'3515'},'phone_numbers':[{'type':'Vezetékes','number':'0646 333-123'},{'type':'Mobil','number':'0620 333-123'}]}");

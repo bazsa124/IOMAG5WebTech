@@ -1,0 +1,371 @@
+[
+    {
+        "course_name":"Web Technológiák alapjai",
+        "oktato":"Agárdi Anita",
+        "szak":"BI,PTI",
+        "time":{
+            "day":"Hétfő",
+            "from":"8:00",
+            "to":"10:00"
+        },
+        "place":"A1/218",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Szoftvertechnológia gyakorlat",
+        "oktato":"Dr. Tompa Tamás",
+        "szak":"BI",
+        "time":{
+            "day":"Hétfő",
+            "from":"10:00",
+            "to":"12:00"
+        },
+        "place":"Inf/202",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Web Technológiák alapjai gyakolat",
+        "oktato":"Dr. Bednarik László",
+        "szak":"BI",
+        "time":{
+            "day":"Hétfő",
+            "from":"12:00",
+            "to":"14:00"
+        },
+        "place":"Inf/103",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+
+
+    {
+        "course_name":"Modern Fizika",
+        "oktato":"Dr. Kovács Endre",
+        "szak":"BI",
+        "time":{
+            "day":"Kedd",
+            "from":"08:00",
+            "to":"10:00"
+        },
+        "place":"A1/320",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"JAVA",
+        "oktato":"Szűcs Miklós",
+        "szak":"BI",
+        "time":{
+            "day":"Kedd",
+            "from":"10:00",
+            "to":"12:00"
+        },
+        "place":"Inf/101",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Adatbázis rendszerek II. gyakorlat",
+        "oktato":"Szűcs Miklós",
+        "szak":"BI",
+        "time":{
+            "day":"Kedd",
+            "from":"12:00",
+            "to":"14:00"
+        },
+        "place":"Inf/103",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+
+
+    {
+        "course_name":"Szoftvertechnológia gyakorlat",
+        "oktato":"Dr. Tompa Tamás",
+        "szak":"BI",
+        "time":{
+            "day":"Szerda",
+            "from":"08:00",
+            "to":"09:00"
+        },
+        "place":"A1/305",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Adatbázis rendszerek II.",
+        "oktato":"Dr. Kovács László",
+        "szak":"BI",
+        "time":{
+            "day":"Szerda",
+            "from":"10:00",
+            "to":"12:00"
+        },
+        "place":"XXXVII. előadó",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Biztonság és védelem a számítástechnológiákban",
+        "oktato":"Wagner György",
+        "szak":"BI",
+        "time":{
+            "day":"Szerda",
+            "from":"12:00",
+            "to":"14:00"
+        },
+        "place":"XXXIII. előadó",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Optimalizálás",
+        "oktato":"Dr. Körei Attila",
+        "szak":"BI,PTI",
+        "time":{
+            "day":"Szerda",
+            "from":"14:00",
+            "to":"16:00"
+        },
+        "place":"XXXIII. előadó",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"Optimalizálás gyakorlat",
+        "oktato":"Dr. Körei Attila",
+        "szak":"BI,PTI",
+        "time":{
+            "day":"Szerda",
+            "from":"16:00",
+            "to":"18:00"
+        },
+        "place":"XXXIII. előadó",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+
+
+    {
+        "course_name":"Biztonság és védelem a számítástechnológiákban gyakorlat",
+        "oktato":"Wagner György",
+        "szak":"BI,PTI",
+        "time":{
+            "day":"Csütörtök",
+            "from":"08:00",
+            "to":"10:00"
+        },
+        "place":"Inf/101",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    },
+
+    {
+        "course_name":"JAVA - gyakorlat",
+        "oktato":"Csépányi-Fürjes László",
+        "szak":"BI,PTI",
+        "time":{
+            "day":"Csütörtök",
+            "from":"10:00",
+            "to":"12:00"
+        },
+        "place":"Inf/103",
+        "address":{
+            "street":"Egyetemváros",
+            "city":"Miskolc",
+            "postal_code":"3515"
+        },
+        "phone_numbers":[
+            {
+                "type":"Vezetékes",
+                "number":"0646 333-123"
+            },
+
+            {
+                "type":"Mobil",
+                "number":"0620 333-123"
+            }
+        ]
+    }
+]

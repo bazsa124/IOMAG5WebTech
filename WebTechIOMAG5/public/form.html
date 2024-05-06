@@ -59,6 +59,9 @@
             #informations > p{
                 line-height: 2;
             }
+            fieldset{
+                font-size: small;
+            }
         </style>
     </head>
     <body onload="load()">
@@ -85,43 +88,47 @@
                 <div id="content">
                     <div>
                         <h2>Személyes adatok</h2>
-                        <label>
-                            <span class="neccesarry">*</span>Név:<br>
-                            <input type="text" id="name" required autocomplete="off" placeholder="Példa Péter" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,30}">
-                        </label>
-                        <br>
-                        <label>
-                            <span class="neccesarry">*</span>Email:<br>
-                            <input type="email" id="email" required autocomplete="off" placeholder="asd@asd.asd">
-                        </label>
-                        <br>
-                        <label>
-                            Telefon:<br>
-                            <input type="tel" id="telefon" placeholder="0620 111 1111" pattern="[0-9]{11}">
-                        </label>
-                        <br>
-                        <label>
-                            <span class="neccesarry">*</span>Lakcím:<br>
-                            <input type="text" id="postal_code"placeholder="3300" required size="4" pattern="[0-9]{4}"> &nbsp; <input type="text"  required id="address" placeholder="Eger, Példa utca 1" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóíö123456789]){3,30}">
-                        </label>
-                        <br>
-                        <label>
-                            Születési idő:<br>
-                            <input id="birth"type="date">
-                        </label>
-                        <br>
-                        <label>
-                            Háziállatok:
+                        <form action="/action_page.php" method="post">
+                            <label>
+                                <span class="neccesarry">*</span>Név:<br>
+                                <input type="text" id="name" required autocomplete="off" placeholder="Példa Péter" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,30}">
+                            </label>
                             <br>
-                            <input type="radio" id="chb_hare" value="hare"> <label for="chb_hare">Házinyúl</label> &nbsp;&nbsp;
-                            <input type="radio" id="chb_dog" value="dog"> <label for="chb_dog">Kutya</label> &nbsp;&nbsp;
-                            <input type="radio" id="chb_cat" value="cat"> <label for="chb_cat">Macska</label> 
+                            <label>
+                                <span class="neccesarry">*</span>Email:<br>
+                                <input type="email" id="email" required autocomplete="off" placeholder="asd@asd.asd">
+                            </label>
                             <br>
-                            <input type="checkbox" id="chb_chicken" value="chicken"> <label for="chb_chicken">Házityúk</label> &nbsp;&nbsp;
-                            <input type="checkbox" id="chb_sheep" value="sheep"> <label for="chb_sheep">Birka</label> &nbsp;&nbsp;
-                            <input type="checkbox" id="chb_others" value="others"> <label for="chb_others">Egyéb</label>
-                            <div id="others_input"></div>
-                        </label>
+                            <label>
+                                Telefon:<br>
+                                <input type="tel" id="telefon" placeholder="0620 111 1111" pattern="[0-9]{11}">
+                            </label>
+                            <br>
+                            <label>
+                                <span class="neccesarry">*</span>Lakcím:<br>
+                                <input type="text" id="postal_code"placeholder="3300" required size="4" pattern="[0-9]{4}"> &nbsp; <input type="text"  required id="address" placeholder="Eger, Példa utca 1" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóíö123456789]){3,30}">
+                            </label>
+                            <br>
+                            <label>
+                                Születési idő:<br>
+                                <input id="birth"type="date">
+                            </label>
+                            <br>
+                            <label>
+                                Háziállatok:
+                                <br>
+                                <fieldset>
+                                    <input type="radio" id="chb_hare" value="hare"> <label for="chb_hare">Házinyúl</label> &nbsp;&nbsp;
+                                    <input type="radio" id="chb_dog" value="dog"> <label for="chb_dog">Kutya</label> &nbsp;&nbsp;
+                                    <input type="radio" id="chb_cat" value="cat"> <label for="chb_cat">Macska</label> 
+                                    <br>
+                                    <input type="checkbox" id="chb_chicken" value="chicken"> <label for="chb_chicken">Házityúk</label> &nbsp;&nbsp;
+                                    <input type="checkbox" id="chb_sheep" value="sheep"> <label for="chb_sheep">Birka</label> &nbsp;&nbsp;
+                                    <input type="checkbox" id="chb_others" value="others"> <label for="chb_others">Egyéb</label>
+                                </fieldset>
+                                <div id="others_input"></div>
+                            </label>
+                        </form>
                     </div>
                     <div>
                         <h2>Kutya adatai</h2>

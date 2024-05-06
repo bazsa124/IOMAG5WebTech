@@ -28,14 +28,17 @@ var selected;
                 $(document).ready(function(){
 
                     $("#dogs").change(function(){
-                    $("#dog_pic").show();
-                    $("#informations").show();
-                    selected= this.value;
-                    clearInformation();
-                    addInformation();
+                        $("#dog_pic").show();
+                        selected= this.value;
+                        clearInformation();
+                        addInformation();
+                     });
+                    $("#dogs").click(function(){
+                        document.getElementById("dogs").value = '';
+                        clearInformation();
+                    });
                 });
-                $("#dogs").click(function(){document.getElementById("dogs").value = '';});
-                });
+                
                 loadJSON();
             }
             

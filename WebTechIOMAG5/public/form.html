@@ -84,11 +84,10 @@
         </nav>
         <div id="main">
             <header><h1>Örökbe fogadás</h1></header>
-            <form>
+            <form id="form">
                 <div id="content">
                     <div>
                         <h2>Személyes adatok</h2>
-                        <form action="/action_page.php" method="post">
                             <label>
                                 <span class="neccesarry">*</span>Név:<br>
                                 <input type="text" id="name" required autocomplete="off" placeholder="Példa Péter" pattern="([A-ZÁÉÍÓÜÖŐÚŰ a-záéőúűöüóí]){3,30}">
@@ -128,7 +127,6 @@
                                 </fieldset>
                                 <div id="others_input"></div>
                             </label>
-                        </form>
                     </div>
                     <div>
                         <h2>Kutya adatai</h2>
@@ -145,7 +143,7 @@
                         <img src="./Pictures/adoptme.jpg" width="250px">
                     </div>
                 </div>
-            <button id="send" onclick="checkValid()">Örökbe fogad</button> &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" id="clear">Töröl</button>
+            <button type="submit" id="send" form="form" onclick="checkValid()">Örökbe fogad</button> &nbsp;&nbsp;&nbsp;&nbsp;<button type="button" id="clear">Töröl</button>
             </form>
             
             <footer>

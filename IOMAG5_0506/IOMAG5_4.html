@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IOMAG5</title>
+
+<style>
+  table {
+    border-collapse: collapse;
+  }
+  td, th {
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+<script src="./jquery-3.7.1.js"></script>
+<script src="jquery-ui-1.13.3/jquery-ui.min.js"></script>
+<script src="IOMAG5_4.js" defer></script>
+<link rel="stylesheet" href="jquery-ui-1.13.3/jquery-ui.min.css">
+</head>
+<body>
+    <header>
+        <h2>jQuery feladatok</h2>
+    </header>
+    <div id="accordion">
+        <h3>Első feladat</h3>
+        <div>
+            <div></div>
+            <p class="hiding" class="ui-widget-header ui-corner-all">A jQuery egy JavaScript programozói könyvtár, amelyet John Resig kezdett fejleszteni.</p>
+            <p class="hiding" class="ui-widget-header ui-corner-all"><b>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</b></p>
+
+            <ul id="lista1">
+            <li class="first" class="ui-widget-header ui-corner-all">tíz</li>
+            <li>húsz</li>
+            <li>harmonc</li>
+            </ul>
+
+            <ul id="lista2">
+            <li  class="first" class="ui-widget-header ui-corner-all">tizedik</li>
+            <li>huszadik</li>
+            <li>harmincadik</li>
+
+            </ul>
+
+            <table id="tabla" class="ui-widget-header ui-corner-all">
+            <tr>
+                <td>1111</td>
+                <td>aaaa</td>
+                <td>bbbb</td>
+            </tr>
+            <tr>
+                <td>2222</td>
+                <td>aaaa</td>
+                <td>bbbb</td>
+            </tr>
+            <tr>
+                <td>3333</td>
+                <td>aaaa</td>
+                <td>bbbb</td>
+            </tr>
+            <tr>
+                <td>4444</td>
+                <td>aaaa</td>
+                <td>bbbb</td>
+            </tr>
+            <tr>
+                <td>5555s</td>
+                <td>aaaa</td>
+                <td>bbbb</td>
+            </tr>
+
+            </table>
+
+            <button id="gomb1" class="ui-button ui-widget ui-corner-all">Kattints ide_1!</button>
+            <button id="gomb2" class="ui-button ui-widget ui-corner-all">Kattints ide_2!</button>
+            <button id="gomb3" class="ui-button ui-widget ui-corner-all">Kattints ide_3!</button>
+            <button id="gomb4" class="ui-button ui-widget ui-corner-all">Kattints ide_4!</button>
+            <button id="gomb5" class="ui-button ui-widget ui-corner-all">Kattints ide_5!</button>
+        </div>
+        <h3>Második feladat</h3>
+        <div>
+            <button class="ui-button ui-widget ui-corner-all"id="toText"><b>Szöveg</b></button> &nbsp;&nbsp; <button class="ui-button ui-widget ui-corner-all" id="toHTML"><b>HTML</b></button> 
+        &nbsp;&nbsp; <button class="ui-button ui-widget ui-corner-all" id="toValue"><b>Érték</b></button> &nbsp;&nbsp; <button class="ui-button ui-widget ui-corner-all" id="toAttributes" value="terület"><b>Paraméter</b></button>
+        <br>
+        <br>
+        <div id="moving"><b>ME GEIK - PTI
+            <br><br><br>
+            . . . . .
+            </b>
+        </div>
+        <br>
+        <form id="form" action="">
+            <label id="nameText">
+                <b>Név: </b>&nbsp; <input id="name" type="text">
+            </label>
+            <br><br>
+            <label id="mailText">
+                <b>Email: </b> &nbsp; <input id="mail" type="email">
+            </label>
+            <br><br>
+            <label id="passText">
+                <b>Jelszó: </b> &nbsp; <input id="pass" type="password">
+            </label>
+        </form>
+        <br><br>
+        <button class="ui-button ui-widget ui-corner-all"id="send" type="button">Jelentkezés</button>
+        <br><br>
+        <b>Forrás: </b><a href="https://www.tutorialspoint.com/jquery/index.htm">https://www.tutorialspoint.com/jquery/index.htm</a>
+
+        </div>
+    </div>
+<p id="link"> <span id="alt"> jQuery: </span> <a href="https://releases.jquery.com/">jQuery weboldal</a></p>
+</body>
+</html>

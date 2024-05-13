@@ -1,6 +1,11 @@
 var selected;
             var dogs_data;
             var pic;
+
+            var emailInput = document.getElementById('email');
+            var p_code_Input = document.getElementById('postal_code');
+            var name_Input = document.getElementById('name');
+            var address_Input = document.getElementById('address');
             function load(){
                 pic=document.getElementById("dog_pic");
                 document.getElementById("home_icons").addEventListener('click',function(){window.open('index.html',"_self")});
@@ -40,6 +45,12 @@ var selected;
                 });
                 
                 loadJSON();
+
+
+                emailInput = document.getElementById('email');
+                p_code_Input = document.getElementById('postal_code');
+                name_Input = document.getElementById('name');
+                address_Input = document.getElementById('address');
             }
             
         function loadJSON(){
@@ -106,12 +117,6 @@ var selected;
                     if(!found)
                     $('#informations').append("<p> Nincs ilyen kutya az adatbázisban'</p>");
         };
-        
-
-        var emailInput = document.getElementById('email');
-        var p_code_Input = document.getElementById('postal_code');
-        var name_Input = document.getElementById('name');
-        var address_Input = document.getElementById('address');
 
         function checkValid(){
 

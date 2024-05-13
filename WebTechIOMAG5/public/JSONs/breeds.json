@@ -5,7 +5,6 @@
         "picture":"./Pictures/Breeds/mvizsla.jpg",
         "desc":"A rövidszőrű magyar vizsla egy kiegyensúlyozott, intelligens vadászkutya. Aktív, barátságos és könnyen tanul. Gyönyörű vörös-arany szőrzettel rendelkezik és híres kiváló szaglásáról. Ideális választás aktív családoknak vagy vadászoknak. Játékos és odaadó természetű. Rendszeres testmozgásra és mentális stimulációra van szüksége a boldog élethez.",
         "attibutes":{
-        "friendly":4,
         "inteligent":2,
         "bite":3,
         "jump":3,
@@ -26,7 +25,6 @@
         "picture":"./Pictures/Breeds/puli.jpg",
         "desc":"A puli egy ősi magyar juhászkutya fajta, melyet hosszú, zsinóros szőrzete tesz különlegessé. Ezek a kutyák hűségesek, okosak és rendkívül aktívak. A pulik hajlamosak a családjuk védelmére és jó szinten alkalmazkodnak az otthoni élethez. A fajta szoros kapcsolatot ápol gazdáival és könnyen tanul. Fontos, hogy rendszeresen ápolják a szőrzetüket, hogy ne legyen gubancos vagy koszos. A pulik ideálisak aktív családoknak, akik sok időt töltenek a szabadban, és akik hajlandóak foglalkozni a fajta specifikus igényeivel.",
         "attibutes":{
-        "friendly":3,
         "inteligent":4,
         "bite":3,
         "jump":5,
@@ -47,7 +45,6 @@
         "picture":"./Pictures/Breeds/pumi.jpg",
         "desc":"A pumi egy közepes méretű, magyar juhászkutya fajta, melyet fürgesége és intelligenciája tesz különlegessé. Ezek a kutyák élénkek, játékosak és rendkívül odaadóak a családjukhoz. A pumik gyakran kiemelkedően intelligensek és könnyen tanulnak, de ugyanakkor önfejűek is lehetnek, így követelnek egy kis konzekvens nevelést. Rövid, durva szőrzetük van, mely könnyen kezelhető, de rendszeres ápolást igényel. A pumik nagyon aktívak és szükségük van rendszeres testmozgásra és szellemi stimulációra. Ideális választás energikus családoknak vagy aktív egyéneknek, akik szeretik bevonni kutyájukat a mindennapi tevékenységeikbe.",
         "attibutes":{
-        "friendly":3,
         "inteligent":5,
         "bite":3,
         "jump":5,
@@ -70,7 +67,6 @@
         "attibutes":{
         "learning":3,
         "kid":3,
-        "friendly":3,
         "inteligent":5,
         "bite":2,
         "jump":4,
@@ -91,7 +87,6 @@
         "attibutes":{
         "learning":2,
         "kid":3,
-        "friendly":3,
         "inteligent":4,
         "bite":3,
         "jump":4,
@@ -112,7 +107,6 @@
         "attibutes":{
         "learning":2,
         "kid":3,
-        "friendly":3,
         "inteligent":4,
         "bite":3,
         "jump":4,
@@ -133,7 +127,6 @@
         "attibutes":{
         "learning":5,
         "kid":4,
-        "friendly":3,
         "inteligent":5,
         "bite":2,
         "jump":3,
@@ -154,7 +147,6 @@
         "attibutes":{
         "learning":4,
         "kid":4,
-        "friendly":3,
         "inteligent":4,
         "bite":2,
         "jump":3,
@@ -175,7 +167,6 @@
         "attibutes":{
         "learning":2,
         "kid":3,
-        "friendly":3,
         "inteligent":4,
         "bite":3,
         "jump":3,
@@ -195,7 +186,6 @@
         "attibutes":{
         "learning":5,
         "kid":5,
-        "friendly":3,
         "inteligent":5,
         "bite":5,
         "jump":4,
@@ -215,7 +205,6 @@
         "attibutes":{
         "learning":3,
         "kid":4,
-        "friendly":3,
         "inteligent":3,
         "bite":3,
         "jump":4,
